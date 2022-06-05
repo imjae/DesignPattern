@@ -15,6 +15,15 @@ public abstract class Duck
         flyBehavior.Fly();
     }
 
+    public void SetFlyBehavior(FlyBehavior fb)
+    {
+        flyBehavior = fb;
+    }
+    public void setQuackBehavior(QuackBehavior qb)
+    {
+        quackBehavior = qb;
+    }
+
     protected virtual void Swim(){}
     protected virtual void Display(){}
 
