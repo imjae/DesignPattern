@@ -1,7 +1,4 @@
-namespace HeadFirst.Assets.Scripts
+public interface FlyBehavior
 {
-    public interface FlyBehavior
-    {
-        public void Fly();
-    }
+    public void Fly();
 }
