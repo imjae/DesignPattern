@@ -1,4 +1,4 @@
 public interface IFlyable
 {
-    protected void Fly();
+    public void Fly();
 }
