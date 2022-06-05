@@ -1,4 +1,4 @@
-public class RedheadDuck : Duck, IFlyable
+public class RedheadDuck : Duck
 {
     protected override void Display()
     {
@@ -7,6 +7,6 @@ public class RedheadDuck : Duck, IFlyable
 
     public void Fly()
     {
-        
+
     }
 }

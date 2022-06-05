@@ -1,4 +1,4 @@
-public class RubberDuck : Duck, IQuackable 
+public class RubberDuck : Duck 
 {
     protected override void Display()
     {

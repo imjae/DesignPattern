@@ -1,4 +1,4 @@
-public class MallardDuck : Duck, IFlyable
+public class MallardDuck : Duck
 {
     protected override void Display()
     {
