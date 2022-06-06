@@ -1,13 +1,16 @@
-public class RedheadDuck : Duck
+namespace Headfirst.Chapter01
 {
-    public RedheadDuck()
+    public class RedheadDuck : Duck
     {
-        quackBehavior = new Squeak();
-        flyBehavior = new FlyWithWings();
-    }
+        public RedheadDuck()
+        {
+            quackBehavior = new Squeak();
+            flyBehavior = new FlyWithWings();
+        }
 
-    protected override void Display()
-    {
-        // 적당한 모양을 표시
+        protected override void Display()
+        {
+            // 적당한 모양을 표시
+        }
     }
 }

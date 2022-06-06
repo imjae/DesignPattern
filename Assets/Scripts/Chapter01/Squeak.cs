@@ -1,7 +1,10 @@
-public class Squeak : QuackBehavior
+namespace Headfirst.Chapter01
 {
-    public void Quack()
+    public class Squeak : QuackBehavior
     {
-        // 삑삑 소리를 냄
+        public void Quack()
+        {
+            // 삑삑 소리를 냄
+        }
     }
 }

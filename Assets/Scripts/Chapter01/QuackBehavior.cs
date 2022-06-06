@@ -1,5 +1,8 @@
-public interface QuackBehavior
+namespace Headfirst.Chapter01
 {
-    public void Quack();
+    public interface QuackBehavior
+    {
+        public void Quack();
 
+    }
 }

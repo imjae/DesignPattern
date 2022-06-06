@@ -1,7 +1,10 @@
-public class MuteQuack : QuackBehavior
+namespace Headfirst.Chapter01
 {
-    public void Quack()
+    public class MuteQuack : QuackBehavior
     {
-        // 아무것도 하지 않음
+        public void Quack()
+        {
+            // 아무것도 하지 않음
+        }
     }
 }

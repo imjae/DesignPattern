@@ -1,30 +1,31 @@
-
-
-public abstract class Duck
+namespace Headfirst.Chapter01
 {
-    public FlyBehavior flyBehavior;
-    public QuackBehavior quackBehavior;
-
-    public void PerformQuack()
+    public abstract class Duck
     {
-        quackBehavior.Quack();
-    }
+        public FlyBehavior flyBehavior;
+        public QuackBehavior quackBehavior;
 
-    public void PerformFly()
-    {
-        flyBehavior.Fly();
-    }
+        public void PerformQuack()
+        {
+            quackBehavior.Quack();
+        }
 
-    public void SetFlyBehavior(FlyBehavior fb)
-    {
-        flyBehavior = fb;
-    }
-    public void setQuackBehavior(QuackBehavior qb)
-    {
-        quackBehavior = qb;
-    }
+        public void PerformFly()
+        {
+            flyBehavior.Fly();
+        }
 
-    protected virtual void Swim(){}
-    protected virtual void Display(){}
+        public void SetFlyBehavior(FlyBehavior fb)
+        {
+            flyBehavior = fb;
+        }
+        public void setQuackBehavior(QuackBehavior qb)
+        {
+            quackBehavior = qb;
+        }
 
+        protected virtual void Swim() { }
+        protected virtual void Display() { }
+
+    }
 }

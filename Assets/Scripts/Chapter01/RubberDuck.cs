@@ -1,13 +1,16 @@
-public class RubberDuck : Duck 
+namespace Headfirst.Chapter01
 {
-    public RubberDuck()
+    public class RubberDuck : Duck
     {
-        quackBehavior = new Squeak();
-        flyBehavior = new FlyNoWay();
-    }
+        public RubberDuck()
+        {
+            quackBehavior = new Squeak();
+            flyBehavior = new FlyNoWay();
+        }
 
-    protected override void Display()
-    {
-        // 적당한 모양을 표시
+        protected override void Display()
+        {
+            // 적당한 모양을 표시
+        }
     }
 }

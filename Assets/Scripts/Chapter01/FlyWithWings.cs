@@ -1,7 +1,10 @@
-public class FlyWithWings : FlyBehavior
+namespace Headfirst.Chapter01
 {
-    public void Fly()
+    public class FlyWithWings : FlyBehavior
     {
-        // 나는 방법 구현
+        public void Fly()
+        {
+            // 나는 방법 구현
+        }
     }
 }

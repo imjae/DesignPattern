@@ -1,7 +1,10 @@
-public class FlyNoWay : FlyBehavior
+namespace Headfirst.Chapter01
 {
-    public void Fly()
+    public class FlyNoWay : FlyBehavior
     {
-        // 아무것도 하지 않음
+        public void Fly()
+        {
+            // 아무것도 하지 않음
+        }
     }
 }

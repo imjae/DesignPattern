@@ -1,4 +1,7 @@
-public interface FlyBehavior
+namespace Headfirst.Chapter01
 {
-    public void Fly();
+    public interface FlyBehavior
+    {
+        public void Fly();
+    }
 }
