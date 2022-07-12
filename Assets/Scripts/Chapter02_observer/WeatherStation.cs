@@ -7,7 +7,7 @@ namespace HeadFirst.Assets.Scripts.Chapter02_observer
     public class WeatherStation : MonoBehaviour
     {
         public WeatherData weatherData;
-        // Start is called before the first frame update
+        public CurrentConditionsDisplay currentDisplay;
         void Start()
         {
             weatherData = new WeatherData();
