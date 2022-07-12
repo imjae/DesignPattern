@@ -1,4 +1,4 @@
-namespace HeadFirst.Assets.Scripts.Chapter02
+namespace HeadFirst.Assets.Scripts.Chapter02.Chapter02_observer
 {
     public class WeatherData
     {
