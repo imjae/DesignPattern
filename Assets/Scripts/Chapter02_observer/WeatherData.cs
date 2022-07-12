@@ -1,6 +1,7 @@
 using System;
+using System.Collections.Generic;
 
-namespace HeadFirst.Assets.Scripts.Chapter02.Chapter02_observer
+namespace HeadFirst.Assets.Scripts.Chapter02_observer
 {
     public class WeatherData : Subject
     {
@@ -29,11 +30,9 @@ namespace HeadFirst.Assets.Scripts.Chapter02.Chapter02_observer
         {
             observers.ForEach(observer =>
             {
-                observer.Update();
+                observer.Update(Temperature, Humidity, Pressure);
             });
         }
-
-
 
         public void MeasurementsChanged()
         {
