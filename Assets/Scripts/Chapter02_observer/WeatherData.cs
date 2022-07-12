@@ -10,7 +10,7 @@ namespace HeadFirst.Assets.Scripts.Chapter02_observer
         private float Temperature { get; set; }
         private float Humidity { get; set; }
         private float Pressure { get; set; }
-
+        
         public WeatherData()
         {
             observers = new List<Observer>();
@@ -30,7 +30,7 @@ namespace HeadFirst.Assets.Scripts.Chapter02_observer
         {
             observers.ForEach(observer =>
             {
-                observer.Update(Temperature, Humidity, Pressure);
+                observer.UpdateData(Temperature, Humidity, Pressure);
             });
         }
 

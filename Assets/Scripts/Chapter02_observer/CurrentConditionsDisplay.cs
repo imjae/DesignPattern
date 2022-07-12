@@ -8,16 +8,14 @@ namespace HeadFirst.Assets.Scripts.Chapter02_observer
     {
         private float Temperature { get; set; }
         private float Humidity { get; set; }
-        private WeatherData weatherData;
+        public WeatherData weatherData;
 
-        public CurrentConditionsDisplay(WeatherData weatherData)
+        private void Awake()
         {
-            this.weatherData = weatherData;
-            
             weatherData.RegisterObserver(this);
         }
 
-        public void Update(float temp, float humidity, float pressrue)
+        public void UpdateData(float temp, float humidity, float pressrue)
         {
             Temperature = temp;
             Humidity = humidity;

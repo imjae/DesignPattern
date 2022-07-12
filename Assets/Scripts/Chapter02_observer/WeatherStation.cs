@@ -11,12 +11,11 @@ namespace HeadFirst.Assets.Scripts.Chapter02_observer
         void Start()
         {
             weatherData = new WeatherData();
-        }
+            
 
-        // Update is called once per frame
-        void Update()
-        {
-
+            weatherData.SetMeasurements(80, 65, 30.4f);
+            weatherData.SetMeasurements(70, 55, 20.4f);
+            weatherData.SetMeasurements(60, 45, 10.4f);
         }
     }
 }
