@@ -1,17 +1,19 @@
 using System;
 using System.Collections.Generic;
 
+using UnityEngine;
+
 namespace HeadFirst.Assets.Scripts.Chapter02_observer
 {
-    public class WeatherData : Subject
+    public class WeatherData : MonoBehaviour, Subject
     {
         // 인스턴스 변수 선언
         List<Observer> observers;
         private float Temperature { get; set; }
         private float Humidity { get; set; }
         private float Pressure { get; set; }
-        
-        public WeatherData()
+
+        private void Awake()
         {
             observers = new List<Observer>();
         }
