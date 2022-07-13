@@ -8,7 +8,7 @@ namespace HeadFirst.Assets.Scripts.Chapter02_observer
     public class WeatherData : MonoBehaviour, Subject
     {
         // 인스턴스 변수 선언
-        List<Observer> observers;
+        private List<Observer> observers;
         private float Temperature { get; set; }
         private float Humidity { get; set; }
         private float Pressure { get; set; }
@@ -20,6 +20,7 @@ namespace HeadFirst.Assets.Scripts.Chapter02_observer
 
         public void RegisterObserver(Observer observer)
         {
+            Debug.Log("@@");
             observers.Add(observer);
         }
 

@@ -9,9 +9,9 @@ namespace HeadFirst.Assets.Scripts.Chapter02_observer
         public WeatherData weatherData;
         void Start()
         {
-            weatherData.SetMeasurements(80, 65, 30.4f);
-            weatherData.SetMeasurements(70, 55, 20.4f);
-            weatherData.SetMeasurements(60, 45, 10.4f);
+            // weatherData.SetMeasurements(80, 65, 30.4f);
+            // weatherData.SetMeasurements(70, 55, 20.4f);
+            // weatherData.SetMeasurements(60, 45, 10.4f);
         }
     }
 }
