@@ -1,18 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Beverage : MonoBehaviour
+namespace Headfirst.Chapter03
 {
-    // Start is called before the first frame update
-    void Start()
+    public abstract class Beverage
     {
+        string description = "no title";
         
-    }
+        public string GetDescription()
+        {
+            return description;
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public abstract double Cost();
     }
 }
