@@ -2,6 +2,7 @@ namespace Headfirst.Chapter03
 {
     public class Whip : CondimentDecorator
     {
+        Beverage beverage;
         public Whip(Beverage beverage)
         {
             this.beverage = beverage;
@@ -9,7 +10,7 @@ namespace Headfirst.Chapter03
 
         public override string GetDescription()
         {
-            return beverage.GetDescription() + ", 휘핑크림";
+            return this.beverage.GetDescription() + ", 휘핑크림";
         }
 
         public override double Cost()

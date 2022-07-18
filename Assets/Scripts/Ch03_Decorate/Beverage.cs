@@ -4,7 +4,7 @@ namespace Headfirst.Chapter03
     {
         public string description = "no title";
         
-        public string GetDescription()
+        public virtual string GetDescription()
         {
             return description;
         }

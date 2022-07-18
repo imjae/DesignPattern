@@ -2,6 +2,7 @@ namespace Headfirst.Chapter03
 {
     public class Soy : CondimentDecorator
     {
+        Beverage beverage;
         public Soy(Beverage beverage)
         {
             this.beverage = beverage;
@@ -9,7 +10,7 @@ namespace Headfirst.Chapter03
 
         public override string GetDescription()
         {
-            return beverage.GetDescription() + ", 두유";
+            return this.beverage.GetDescription() + ", 두유";
         }
 
         public override double Cost()

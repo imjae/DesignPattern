@@ -2,6 +2,7 @@ namespace Headfirst.Chapter03
 {
     public class Mocha : CondimentDecorator
     {
+        Beverage beverage;
         public Mocha(Beverage beverage)
         {
             this.beverage = beverage;
@@ -9,12 +10,12 @@ namespace Headfirst.Chapter03
 
         public override string GetDescription()
         {
-            return beverage.GetDescription() + ", 모카";
+            return this.beverage.GetDescription() + ", 모카";
         }
 
         public override double Cost()
         {
-            return beverage.Cost() + .20;
+            return this.beverage.Cost() + .20;
         }
     }
 }
