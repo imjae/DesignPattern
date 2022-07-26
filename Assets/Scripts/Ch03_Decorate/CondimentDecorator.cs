@@ -1,9 +1,6 @@
-namespace Headfirst.Chapter03
+namespace Headfirst.Chapter03.remind1
 {
     public abstract class CondimentDecorator : Beverage
     {
-        public Beverage beverage;
-
-        public new abstract string GetDescription();
     }
 }
