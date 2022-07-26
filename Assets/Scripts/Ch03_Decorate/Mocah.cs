@@ -2,6 +2,7 @@ namespace Headfirst.Chapter03.remind1
 {
     public class Mocha : CondimentDecorator
     {
+        Beverage beverage;
         public Mocha(Beverage beverage)
         {
             this.beverage = beverage;
@@ -14,7 +15,7 @@ namespace Headfirst.Chapter03.remind1
 
         public override double Cost()
         {
-            return beverage.Cost() + .20;
+            return this.beverage.Cost() + .20;
         }
     }
 }

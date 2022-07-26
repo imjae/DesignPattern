@@ -6,6 +6,9 @@ namespace Headfirst.Chapter03.remind1
 {
     public class StartBuzz : MonoBehaviour
     {
+        public Beverage beverage;
+        public Beverage beverage2;
+
         // Start is called before the first frame update
         void Start()
         {

@@ -2,6 +2,7 @@ namespace Headfirst.Chapter03.remind1
 {
     public class Soy : CondimentDecorator
     {
+        Beverage beverage;
         public Soy(Beverage beverage)
         {
             this.beverage = beverage;
