@@ -6,9 +6,9 @@ public class OrderPizza
 {
     Pizza pizza = new Pizza();
 
-    pizza.Prepared();
-    pizza.Bake();
-    pizza.Cut();
-    pizza.Box();
+    // pizza.Prepared();
+    // pizza.Bake();
+    // pizza.Cut();
+    // pizza.Box();
 }
 

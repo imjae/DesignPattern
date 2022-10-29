@@ -2,7 +2,7 @@ namespace Headfirst.Chapter03.remind1
 {
     public class Mocha : CondimentDecorator
     {
-        Beverage beverage;
+        new Beverage beverage;
         public Mocha(Beverage beverage)
         {
             this.beverage = beverage;

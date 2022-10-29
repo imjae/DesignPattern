@@ -2,7 +2,7 @@ namespace Headfirst.Chapter03.remind1
 {
     public class Whip : CondimentDecorator
     {
-        Beverage beverage;
+        new Beverage beverage;
         public Whip(Beverage beverage)
         {
             this.beverage = beverage;
