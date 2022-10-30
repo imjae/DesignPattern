@@ -1,17 +1,17 @@
 namespace Headfirst.Chapter06
 {
-    public class LightOnCommand : Command
+    public class LightOffCommand : Command
     {
         private Light light;
 
-        public LightOnCommand(Light light)
+        public LightOffCommand(Light light)
         {
             this.light = light;
         }
 
         public void Execute()
         {
-            light.On();
+            light.Off();
         }
     }
 }
